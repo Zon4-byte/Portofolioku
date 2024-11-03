@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Muhamad Fauzan</title>
+    <link rel="stylesheet" href="Style Project.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <h1 style="text-align: center; margin-top: 100px;">My Projects</h1>
+
+    <div class="project-list">
+        <div class="project-item">
+            <img src="Screenshot (244).png">
+            <h3>Project 1: Form Login</h3>
+            <a href="Form Login.html">Lihat Detail</a>
+        </div>
+
+        <div class="project-item">
+            <img src="Screenshot (249).png">
+            <h3>Project 2: Kalkulator</h3>
+            <a href="Kalkulus.html">Lihat Detail</a>
+        </div>
+
+        <div class="project-item">
+            <img src="Screenshot (251).png" alt="Project 3">
+            <h3>Project 3: Dashboard</h3>
+            <a href="Dashboard\index.html">Lihat Detail</a>
+        </div>
+
+        <div class="project-item">
+            <img src="5ca195fc-e28d-4216-aa32-0bd70b5b9d33.jpg" alt="Project 4">
+            <h3>Introduction to HTML</h3>
+            <a href="https://www.sololearn.com/certificates/CC-XOAF4JB6">Lihat Detail</a>
+        </div>
+
+        <div class="project-item">
+            <img src="1df50cb4-09b9-426f-8bd3-6c47b47ce09e.jpg" alt="Project 5">
+            <h3>Introduction to CSS</h3>
+            <a href="https://www.sololearn.com/certificates/CC-W6WPBNHE">Lihat Detail</a>
+        </div>
+
+        <div class="project-item">
+            <img src="63c8039d-46e9-40f2-aa17-d231da7bd517.jpg" alt="Project 6">
+            <h3>Introduction to JavaScript</h3>
+            <a href="https://www.sololearn.com/certificates/CC-L9YL2YIQ">Lihat Detail</a>
+        </div>
+    </div>
+
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+    </script>
+</body>
+</html>

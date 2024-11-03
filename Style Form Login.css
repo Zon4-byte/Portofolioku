@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: url(Tugas.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+  }
+  .Ingat-saya-dan-lupa-sandi {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 20px; 
+    font-size: 12px;
+  }
+
+  .Ingat-saya-dan-lupa-sandi a {
+    color: blue;
+    text-decoration: none;
+    
+  }
+  .Ingat-saya-dan-lupa-sandi label input{
+    accent-color: #fff;
+    margin-right: 3px;
+   
+  }
+  .Ingat-saya-dan-lupa-sandi a:hover {
+    text-decoration: underline;
+  }
+  button {
+    background-color: #03a9f4;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0288d1;
+  }
+  .Daftar {
+    margin-top: 20px;
+    font-size: 12.5px;
+  }
+  .Daftar a {
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .Daftar a:hover {
+    text-decoration: underline;
+  }

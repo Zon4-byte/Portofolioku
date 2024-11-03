@@ -1,0 +1,68 @@
+body {
+    background: url(pngtree-wallpaper-anime-of-the-city-on-a-clear-night-sky-with-picture-image_2727081.png)no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #ededed;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);  
+    line-height: 1; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-item {
+    background-color: #081b29;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item img {
+    width: 100%;             
+    max-width: 300px;       
+    height: auto;            
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;       
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.project-item h3 {
+    color: #00abf0;
+    margin-top: 15px;
+}
+
+.project-item p {
+    color: #ededed;
+    margin: 10px 0;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00abf0;
+    color: #081b29;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-item a:hover {
+    background-color: #007ab8;
+}

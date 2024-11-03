@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio
+    </title>
+    <link rel="stylesheet" href="Style Portofolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="header">
+     <div class="logo">
+        <img src="IMG-20230408-WA0019.jpg" alt="Logo" class="logo-image"> 
+    </div>
+    <div class="logo-text">Muhamad Fauzan</div>
+        
+        <nav class="navbar">
+            <a href="Portofolio.html" class="active">Home</a>         
+            <a href="About.html">About</a>                      
+            <a href="Project.html">Project</a>                  
+            <a href="Skills.html">Skills</a>                  
+        </nav>
+        
+    </header>
+
+    <section class="Home">
+        <div class="Home-Content">
+            <h1>Halo, Saya Muhamad Fauzan</h1>
+            <h3>Mahasiswa Universitas Pamulang</h3>
+            <p>Masih Aktif</p>
+            <div class="btn-box">
+                <a href="https://wa.me/6281212771986/">Pesan Saya</a>
+                <a href="https://wa.me/6281212771986/">Hubungi Saya</a>
+            </div>
+        </div>
+
+        <video autoplay muted loop class="background-video">
+            <source src="y2mate.com - Live Wallpaper Anime HD4K Samurai Autumn_1080pHFR.mp4" type="video/mp4">
+          </video>
+
+        <div class="home-sci">
+            <a href="https://wa.me/6281212771986/"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="https://www.instagram.com/pawjannn01/"><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+        <div id="imageModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="fullImage">
+        </div>
+
+    </section>
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("fullImage");
+        const logoImage = document.querySelector(".logo-image");
+        const closeModal = document.querySelector(".close");
+    
+        logoImage.onclick = function () {
+            modal.style.display = "block";
+            modalImage.src = logoImage.src;  
+        };
+    
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        };
+    
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+    
+</body>
+
+</html>
